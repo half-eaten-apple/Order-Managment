@@ -1,0 +1,32 @@
+<header class=""><!--Header with navbar which is fixed for all-->
+  <nav class="nav navbar-nav nav-justified navStyles" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <ul class="nav navbar-nav">
+          <li><a class ="navList" routerLink="/dashboard">Logo</a></li>
+          <li><a class ="navList" href="#">Management System</a></li>
+        </ul>
+      </div>
+      <div class="nav navbar-right">
+        <ul class="nav navbar-nav">
+
+          <li><a class ="navList" routerLink="/dashboard">Dashboard</a></li>
+          <li><a class ="navList" routerLink="/singleOrder">Single Order</a></li>
+          <li><a class ="navList" routerLink="/multipleOrder">Multiple Order</a></li>
+          <li><a class ="navList" routerLink="/reports">Report</a></li>
+          <li class="dropDownStyle">
+            <span class="btn-group">
+              <button class="btn btn-info">Employee Id</button>
+              <button class="btn btn-info" data-toggle="dropdown"><span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Sign Out</a></li>
+              </ul>
+            </span>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+  </nav>
+</header>
+<router-outlet></router-outlet>

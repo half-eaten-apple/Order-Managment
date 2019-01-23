@@ -1,0 +1,63 @@
+/* You can add global styles to this file, and also import other style files */
+/* .navSetUp{
+    display: inline;
+    position: relative;
+} */
+
+/* Dashboard CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.viewDashboard{
+    top: 32vh;
+    position: relative;
+}
+.boxes{
+    height: 25vh;
+    border: 1px solid rgba(27, 89, 223, 0.781);
+    border-radius: 5px;
+    position: relative;
+    
+}
+.boxes:hover{
+    background: linear-gradient(to bottom right, white, rgba(27, 89, 223, 0.781));
+}
+.dashboardtextPosition{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+/* Single Order CSS */
+.viewOrderName{
+    position: relative;
+    top: 7vh;
+}
+.singleOrderInputMargin{
+margin-left: 1%;
+margin-right: 5%;
+}
+.viewOrderListnLog{
+    position: relative;
+    top: 10vh;
+}
+.viewOrderListnLog>.orderList>.table>thead>tr th,
+.viewOrderListnLog>.orderList>.table>tbody>tr th{
+    text-align: center;
+}
+.orderLog{
+margin-top: 10px;
+}
+.orderLog>.table>thead>tr th,
+.orderLog>.table>tbody>tr th{
+    text-align: center;
+}
+/* Multiple Order CSS*/
+.multipleOrderSelections{
+    display: inline;
+}
+.detailsAlignment{
+    margin-top: 5%;
+}

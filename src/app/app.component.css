@@ -1,0 +1,13 @@
+.navSetUp{
+    display: inline;
+}
+.navStyles{
+    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.596) ;
+    border: 1px solid ;
+}
+.navList:active{
+    background-color: aqua;
+}
+.dropDownStyle{
+    margin-top: 9px;
+}

@@ -1,0 +1,12 @@
+/* 
+.dashboardCover{
+    height: 80px;
+    width: 80px;
+    border: 2px solid black;
+}
+.dashboardPosition2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+} */
