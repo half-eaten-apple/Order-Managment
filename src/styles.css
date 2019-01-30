@@ -33,7 +33,7 @@ transform: translate(-50%,-50%);
 /* Single Order CSS */
 .viewOrderName{
     position: relative;
-    top: 7vh;
+    top: 8vh;
 }
 .singleOrderInputMargin{
 margin-left: 1%;
@@ -43,8 +43,8 @@ margin-right: 5%;
     position: relative;
     top: 10vh;
 }
-.viewOrderListnLog>.orderList>.table>thead>tr th,
-.viewOrderListnLog>.orderList>.table>tbody>tr th{
+.panel-body>.table>thead>tr th,
+.panel-body>.table>tbody>tr th{
     text-align: center;
 }
 .orderLog{
@@ -59,5 +59,14 @@ margin-top: 10px;
     display: inline;
 }
 .detailsAlignment{
-    margin-top: 5%;
+    margin-top: 7%;
+}
+.icon-center{
+    text-align:center;
+}
+.leftMargin{
+    margin-left: 5px;
+}
+.chartAlignment{
+    margin-top: 10%; 
 }

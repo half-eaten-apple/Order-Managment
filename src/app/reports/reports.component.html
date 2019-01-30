@@ -1,3 +1,43 @@
-<p>
-  reports works!
-</p>
+<div class="container">
+  <div class="row">
+  <div class="viewOrderName">
+    <div class="col-md-3">
+      <form class="form-inline">
+        <label for="countrySelect">Country</label>
+        <select class="form-control col-md-offset-1" id="countrySelect">
+          <option value="India">India</option>
+          <option value="China">China</option>
+          <option value="UK">UK</option>
+          <option value="Japan">Japan</option>
+          <option value="SriLanka">SriLanka</option>
+        </select>
+      </form>
+    </div>
+    <div class="col-md-3">
+      <button class="btn btn-primary">Submit</button>
+    </div>
+
+  </div>
+</div>
+
+  <div class="row">
+    <div class="col-md-6 chartAlignment">
+        <fusioncharts
+        [width]="width"
+        [height]="height"
+        [type]="type"
+        [dataFormat]="dataFormat"
+        [dataSource]="dataSource">
+    </fusioncharts>
+    </div>
+    <div class="col-md-6 chartAlignment">
+        <fusioncharts
+        [width]="width_pie"
+        [height]="height_pie"
+        [type]="type_pie"
+        [dataFormat]="dataFormat_pie"
+        [dataSource]="dataSource_pie">
+    </fusioncharts>
+    </div>
+  </div>
+</div>

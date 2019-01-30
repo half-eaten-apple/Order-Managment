@@ -14,33 +14,35 @@
           </select>
         </form>
       </div>
-      
+
       <div class="col-md-3">
         <form class="form-inline">
-            <label for="StartDate">Start Date</label>
-            <input type="date" class="form-control" id="StartDate">
-        </form>  
+          <label for="StartDate">Start Date</label>
+          <input type="text" bsDatepicker class="form-control" id="StartDate">
+        </form>
       </div>
-      
+
       <div class="col-md-3">
-          <form class="form-inline">
-              <label for="EndDate">End Date</label>
-              <input type="date" class="form-control" id="EndDate">
-          </form>
+        <form class="form-inline">
+          <label for="EndDate">End Date</label>
+          <input type="text" bsDatepicker class="form-control" id="EndDate">
+        </form>
       </div>
-      
+
       <div class="col-md-3">
-          <button class="btn btn-primary">Submit</button>
+        <button class="btn btn-primary">Submit</button>
       </div>
     </div>
   </div>
 </div>
-<div class="container">
-    <table class="table table-bordered table-striped data-table">
+<div class="container detailsAlignment">
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h5 class="text-center">Multiple Order List</h5>
+    </div>
+    <div class="panel-body">
+      <table class="table table-bordered table-striped" datatable>
         <thead>
-          <tr>
-            <th colspan="6">Multiple Order List</th>
-          </tr>
           <tr>
             <th>S.No.</th>
             <th>Header1</th>
@@ -48,6 +50,7 @@
             <th>Header3</th>
             <th>Header4</th>
             <th>Header5</th>
+            <th>Check Status</th>
           </tr>
         </thead>
         <tbody>
@@ -57,6 +60,8 @@
             <td></td>
             <td></td>
             <td></td>
+            <td></td>
+            <td class="icon-center"><button data-target="#Status" data-toggle="modal"><span class="glyphicon glyphicon-unchecked"></span></button></td>
           </tr>
           <tr>
             <td></td>
@@ -64,6 +69,8 @@
             <td></td>
             <td></td>
             <td></td>
+            <td></td>
+            <td class="icon-center"><button data-target="#Status" data-toggle="modal"><span class="glyphicon glyphicon-unchecked"></span></button></td>
           </tr>
           <tr>
             <td></td>
@@ -71,6 +78,8 @@
             <td></td>
             <td></td>
             <td></td>
+            <td></td>
+            <td class="icon-center"><button data-target="#Status" data-toggle="modal"><span class="glyphicon glyphicon-unchecked"></span></button></td>
           </tr>
           <tr>
             <td></td>
@@ -78,6 +87,8 @@
             <td></td>
             <td></td>
             <td></td>
+            <td></td>
+            <td class="icon-center"><button data-target="#Status" data-toggle="modal"><span class="glyphicon glyphicon-unchecked"></span></button></td>
           </tr>
           <tr>
             <td></td>
@@ -85,8 +96,127 @@
             <td></td>
             <td></td>
             <td></td>
+            <td></td>
+            <td class="icon-center"><button data-target="#Status" data-toggle="modal"><span class="glyphicon glyphicon-unchecked"></span></button></td>
           </tr>
+
         </tbody>
 
       </table>
+    </div>
+  </div>
+
 </div>
+<div class="modal" id="Status" role="dialog">
+  <div class="container">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <!--Single Order List-->
+            <div>
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h5 class="text-center">Order List</h5>
+                </div>
+                <div class="panel-body">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Order Details</th>
+                        <th>Address</th>
+                        <th>Contact Details</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                      </tr>
+                      <tr>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                      </tr>
+                      <tr>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- Order Log of Single Order Page -->
+              <div class="orderLog">
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                    <h5 class="text-center">Order Log</h5>
+                  </div>
+                  <div class="panel-body">
+                    <table class="table table-bordered table-striped" datatable>
+                      <thead>
+                        <tr>
+                          <th>S.No.</th>
+                          <th>Time</th>
+                          <th>Date</th>
+                          <th>Status</th>
+                          <th>Description</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+
+                    </table>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+     
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-danger" data-dismiss="modal">Cancel</button>
+          <button class="btn btn-success">Update</button>
+        </div>
+      </div>
+    </div>
+  </div>

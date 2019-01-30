@@ -1,5 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { DataTablesModule } from 'angular-datatables';
+import { FusionChartsModule } from 'angular-fusioncharts';
+import * as FusionCharts from 'fusioncharts';
+import * as Charts from 'fusioncharts/fusioncharts.charts';
+
+FusionChartsModule.fcRoot(FusionCharts, Charts)
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -9,6 +16,7 @@ import { SingleOrderComponent } from './single-order/single-order.component';
 import { MultipleOrderComponent } from './multiple-order/multiple-order.component';
 import { ReportsComponent } from './reports/reports.component';
 import { from } from 'rxjs';
+
 
 @NgModule({
   declarations: [
@@ -21,6 +29,9 @@ import { from } from 'rxjs';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    DataTablesModule,
+    FusionChartsModule,
+    BsDatepickerModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
