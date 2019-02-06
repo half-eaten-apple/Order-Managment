@@ -24,7 +24,7 @@ export class SingleOrderComponent implements OnInit {
       (data => {
         this.Information = data;
         //this.Information = JSON.stringify(this.Information);
-        //alert(this.Information);
+        // alert(this.Information);
       })
      
   }

@@ -16,8 +16,94 @@
       <div class="panel-heading">
         <h5 class="text-center">Order List</h5>
       </div>
-      <div class="panel-body">
-        <table class="table table-bordered">
+      <div class="panel-body text-center">
+        <div class="divTable">
+          <div class="divTableBody">
+            <div class="divTableRow">
+              <div class="divTableCell">Order Details
+                <div class="divTable">
+                  <div class="divTableBody">
+                    <div class="divTableRow ">
+                      <div class="divTableCell">Product Number</div>
+                      <div class="divTableCell">{{Information?.orderList?.orderDetails?.productNumber}}</div>
+                    </div>
+                    <div class="divTableRow">
+                      <div class="divTableCell">Product Name</div>
+                      <div class="divTableCell">{{Information?.orderList?.orderDetails?.productName}}</div>
+                    </div>
+                    <div class="divTableRow">
+                      <div class="divTableCell">Product Description</div>
+                      <div class="divTableCell">{{Information?.orderList?.orderDetails?.productDescription}}</div>
+                    </div>
+                    <div class="divTableRow">
+                      <div class="divTableCell">Product Price</div>
+                      <div class="divTableCell">{{Information?.orderList?.orderDetails?.productPrice}}</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="divTableCell">Address
+                <div class="divTable">
+                  <div class="divTableBody">
+                    <div class="divTableRow">
+                      <div class="divTableCell">House No</div>
+                      <div class="divTableCell">{{Information?.orderList?.address?.houseNo}}</div>
+                    </div>
+                    <div class="divTableRow">
+                      <div class="divTableCell">Lane</div>
+                      <div class="divTableCell">{{Information?.orderList?.address?.Lane}}</div>
+                    </div>
+                    <div class="divTableRow">
+                      <div class="divTableCell">Area</div>
+                      <div class="divTableCell">{{Information?.orderList?.address?.Area}}</div>
+                    </div>
+                    <div class="divTableRow">
+                      <div class="divTableCell">Landmark</div>
+                      <div class="divTableCell">{{Information?.orderList?.address?.landmark}}</div>
+                    </div>
+                    <div class="divTableRow">
+                      <div class="divTableCell">city</div>
+                      <div class="divTableCell">{{Information?.orderList?.address?.city}}</div>
+                    </div>
+                    <div class="divTableRow">
+                      <div class="divTableCell">State</div>
+                      <div class="divTableCell">{{Information?.orderList?.address?.state}}</div>
+                    </div>
+                    <div class="divTableRow">
+                      <div class="divTableCell">Pin</div>
+                      <div class="divTableCell">{{Information?.orderList?.address?.pin}}</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="divTableCell">Contact Details
+                <div class="divTable">
+                  <div class="divTableBody">
+                    <div class="divTableRow">
+                      <div class="divTableCell">Name</div>
+                      <div class="divTableCell">{{Information?.orderList?.contactDetails?.name}}</div>
+                    </div>
+                    <div class="divTableRow">
+                      <div class="divTableCell">Phone no.</div>
+                      <div class="divTableCell">{{Information?.orderList?.contactDetails?.phoneNo}}</div>
+                    </div>
+                    <div class="divTableRow">
+                      <div class="divTableCell">Email id</div>
+                      <div class="divTableCell">{{Information?.orderList?.contactDetails?.emailId}}</div>
+                    </div>
+                    <div class="divTableRow">
+                      <div class="divTableCell">Alternate number</div>
+                      <div class="divTableCell">{{Information?.orderList?.contactDetails?.alternateNo}}</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- <table class="table table-bordered">
           <thead>
             <tr>
               <th>Order Details</th>
@@ -53,7 +139,7 @@
                 </ul></td>
             </tr>
           </tbody>
-        </table>
+        </table> -->
       </div>
     </div>
     <!-- Order Log of Single Order Page -->
@@ -62,28 +148,67 @@
         <div class="panel-heading">
           <h5 class="text-center">Order Log</h5>
         </div>
-        <div class="panel-body">
-          <table class="table table-bordered table-striped" datatable>
-            <thead>
-              <tr>
-                <th>S.No.</th>
-                <th>Time</th>
-                <th>Date</th>
-                <th>Status</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              <!-- <tr *ngFor="let log  of Information">
-                <td></td>
-                <td>{{log.orderLog.time}}</td>
-                <td>{{log.orderLog.date}}</td>
-                <td>{{log.orderLog.status}}</td>
-                <td>{{log.orderLog.description}}</td>
-              </tr> -->
-            </tbody>
+        <div class="panel-body text-center">
+           <!-- <div class="divTable">
+            <div class="divTableBody">
+              <div class="divTableRow">
+                <div class="divTableCell">Time
+                  <div class="divTable" *ngFor="let log of Information.orderLog">
+                    <div class="divTableBody">
+                      <div class="divTableRow">
+                        <div class="divTableCell">{{log.time}}</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="divTableCell">Date
+                  <div class="divTable" *ngFor="let log of Information.orderLog">
+                    <div class="divTableBody">
+                      <div class="divTableRow">
+                        <div class="divTableCell">{{log.date}}</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="divTableCell">Status
+                  <div class="divTable" *ngFor="let log of Information.orderLog">
+                    <div class="divTableBody">
+                      <div class="divTableRow">
+                        <div class="divTableCell">{{log.status}}</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="divTableCell">Description
+                  <div class="divTable" *ngFor="let log of Information.orderLog">
+                    <div class="divTableBody">
+                      <div class="divTableRow">
+                        <div class="divTableCell">{{log.description}}</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        
+              <table class="table table-bordered table-striped" datatable>
+                <tr>
+                  <th>S.No.</th>
+                  <th>Time</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                  <th>Description</th>
+                </tr>
+                <tr *ngFor="let log of Information.orderLog">
+                  <td>1</td>
+                  <td>{{log?.time}}</td>
+                  <td>{{log?.date}}</td>
+                  <td>{{log?.status}}</td>
+                  <td>{{log?.description}}</td>
+                </tr>
 
-          </table>
+              </table>
         </div>
       </div>
 
