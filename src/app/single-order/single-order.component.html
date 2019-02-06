@@ -5,7 +5,7 @@
     <div>
       <label>Order No.</label>
       <input type="number" class="singleOrderInputMargin">
-      <button class="btn btn-primary">Submit</button>
+      <button class="btn btn-primary" (click)="singleOrderDetails()">Submit</button>
     </div>
   </div>
 </div>
@@ -25,21 +25,32 @@
               <th>Contact Details</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody >   
             <tr>
-              <td> </td>
-              <td> </td>
-              <td> </td>
-            </tr>
-            <tr>
-              <td> </td>
-              <td> </td>
-              <td> </td>
-            </tr>
-            <tr>
-              <td> </td>
-              <td> </td>
-              <td> </td>
+              <td>
+                <ul class="list-unstyled">
+                  <li>Product Number:{{Information?.orderList?.orderDetails?.productNumber}}</li>
+                  <li>Product Name: {{Information?.orderList?.orderDetails?.productName}}</li>
+                  <li>Product Description: {{Information?.orderList?.orderDetails?.productDescription}}</li>
+                  <li>Product Price: {{Information?.orderList?.orderDetails?.productPrice}}</li>
+                </ul></td>
+              <td>
+                <ul class="list-unstyled">
+                  <li>House No. :{{Information?.orderList?.address?.houseNo}}</li>
+                  <li>Lane: {{Information?.orderList?.address?.Lane}}</li>
+                  <li>Area: {{Information?.orderList?.address?.Area}}</li>
+                  <li>Landmark: {{Information?.orderList?.address?.landmark}}</li>
+                  <li>City: {{Information?.orderList?.address?.city}}</li>
+                  <li>State: {{Information?.orderList?.address?.state}}</li>
+                  <li>Pin: {{Information?.orderList?.address?.pin}}</li>
+                </ul></td>
+              <td>
+                <ul class="list-unstyled">
+                  <li>Name: {{Information?.orderList?.contactDetails?.name}}</li>
+                  <li>Phone Number: {{Information?.orderList?.contactDetails?.phoneNo}}</li>
+                  <li>Email Id: {{Information?.orderList?.contactDetails?.emailId}}</li>
+                  <li>Alternate Number: {{Information?.orderList?.contactDetails?.alternateNo}}</li>
+                </ul></td>
             </tr>
           </tbody>
         </table>
@@ -63,41 +74,13 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <!-- <tr *ngFor="let log  of Information">
                 <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
+                <td>{{log.orderLog.time}}</td>
+                <td>{{log.orderLog.date}}</td>
+                <td>{{log.orderLog.status}}</td>
+                <td>{{log.orderLog.description}}</td>
+              </tr> -->
             </tbody>
 
           </table>

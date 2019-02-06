@@ -54,52 +54,15 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="icon-center"><button data-target="#Status" data-toggle="modal"><span class="glyphicon glyphicon-unchecked"></span></button></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
+          <tr *ngFor = "let mol of multipleOL">
+            <td>{{mol.multipleOrderList.itemName}}</td>
+            <td>{{mol.multipleOrderList.itemName}}</td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td class="icon-center"><button data-target="#Status" data-toggle="modal"><span class="glyphicon glyphicon-unchecked"></span></button></td>
           </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="icon-center"><button data-target="#Status" data-toggle="modal"><span class="glyphicon glyphicon-unchecked"></span></button></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="icon-center"><button data-target="#Status" data-toggle="modal"><span class="glyphicon glyphicon-unchecked"></span></button></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="icon-center"><button data-target="#Status" data-toggle="modal"><span class="glyphicon glyphicon-unchecked"></span></button></td>
-          </tr>
-
         </tbody>
 
       </table>
